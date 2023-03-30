@@ -1,0 +1,39 @@
+@media screen and (max-width: 992px) {
+    .textSet {
+      font-size: 0.9rem !important;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .textSet {
+      font-size: 0.7rem;
+    }
+  
+    .info-text {
+      text-align: justify;
+      width: 90%;
+    }
+
+  #add,#con{
+    padding: 10px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  * {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  * {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .deskText {
+    font-size: 1.1rem;
+  }
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation & display property</title>
+    <style>
+        .navbar {
+            background-color: rgb(41, 41, 42);
+            border-radius: 21px;
+        }
+        
+        .navbar ul {
+            overflow: auto;
+        }
+        
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 15px 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .navbar li a {
+            padding: 5px 4px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        
+        .search {
+            float: right;
+            margin: 10px 12px;
+            padding: 3px 25px;
+        }
+        
+        .navbar input {
+            border-radius: 15px;
+            border: 2px solid;
+            padding: 2px 2px;
+            width: 150px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#"> Home </a> </li>
+                <li> <a href="#"> About </a> </li>
+                <li> <a href="#"> Services </a> </li>
+                <li> <a href="#"> Link </a> </li>
+                <li> <a href="#"> Help </a> </li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+</body>
+
+</html>

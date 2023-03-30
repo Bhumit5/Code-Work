@@ -1,0 +1,33 @@
+/* Navbar Style */
+
+#mid-item {
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+#mid-item li {
+    margin: -20px 10px;
+}
+
+.navbar {
+    margin: 25px 5px;
+    font-size: 1.3rem;
+    display: flex;
+}
+
+.middle {
+    display: block;
+    width: 500px;
+    margin: auto;
+}
+
+.left {
+    width: 20%;
+    text-align: left;
+}
+
+.right {
+    position: absolute;
+    right: 5px;
+}

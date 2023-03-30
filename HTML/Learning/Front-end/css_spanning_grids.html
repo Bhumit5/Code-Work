@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spann grids</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 4fr);
+        grid-template-rows: repeat(4, 3fr);
+        /* grid-column-gap: 0.5rem; */
+        /* grid-row-gap: 0.3rem; */
+        grid-gap: 0.3rem;
+    }
+    
+    .box {
+        background-color: antiquewhite;
+        border: 2px solid;
+        padding: 2px 1px;
+    }
+    
+    .box:first-child {
+        /* grid-column-start: 1; */
+        /* Start and end with line number */
+        /* grid-column-end: 4; */
+        /* grid-row-start: 1; */
+        /* grid-row-end: 3; */
+        grid-column: 1 / span 2;
+        /* Span {upto box no.} */
+        grid-row: 1 / span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+    </div>
+</body>
+
+</html>

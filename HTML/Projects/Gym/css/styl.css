@@ -1,0 +1,103 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: url('/HTML/Projects/Gym/images/bg.jpg');
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Satisfy', cursive;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* border: 2px solid white; */
+}
+
+.left img {
+    filter: invert(100%);
+    width: 75px;
+}
+
+.mid {
+    display: block;
+    width: 529px;
+    margin: 20px auto;
+    padding: 2px 3px;
+    /* border: 2px solid white; */
+}
+
+.right {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* border: 2px solid white; */
+}
+
+.navbar {
+    display: inline;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 9px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: rgb(98, 89, 89);
+}
+
+.btn {
+    background-color: rgb(33, 29, 29);
+    color: white;
+    padding: 3px 19px;
+    border: 2px solid rgb(174, 166, 166);
+    border-radius: 10px;
+    margin: 4px;
+    font-family: 'Satisfy', cursive;
+}
+
+.btn:hover {
+    background-color: rgb(53, 44, 44);
+    cursor: pointer;
+}
+
+.container {
+    border: 2px solid rgb(99, 93, 93);
+    margin-top: 150px;
+    margin-left: 50px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 719px;
+}
+
+.form-group input {
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 350px;
+    font-size: 15px;
+    border: 2px solid rgb(111, 95, 95);
+    padding: 2px 1px;
+    font-family: 'Satisfy', cursive;
+}
+
+.container h3 {
+    text-align: center;
+}
+
+.container button {
+    display: block;
+    width: 352px;
+    margin: 15px auto;
+    font-family: 'Satisfy', cursive;
+}

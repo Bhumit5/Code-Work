@@ -1,0 +1,128 @@
+:root {
+  --theme-brown: #672b00;
+  --theme-l-brown: #edc98b;
+  --theme-text: "Libre Baskerville", serif;
+  --theme-b-text: "Pacifico", cursive;
+}
+
+::-webkit-scrollbar{
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-track{
+  background: #ebc179;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #773200;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--theme-brown);
+}
+
+body {
+  background-color: #ffeccf;
+}
+
+*{
+color: var(--theme-brown);
+font-family: var(--theme-b-text);
+}
+/** Set footer  */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/** Navbar  */
+.navbar {
+  background-image: linear-gradient(
+    70deg,
+    var(--theme-brown),
+    var(--theme-l-brown),
+    var(--theme-l-brown)
+  );
+}
+
+.nav-link {
+  color: var(--theme-brown);
+}
+
+
+.nav-link-effect {
+  display: inline-block;
+  position: relative;
+  color: var(--theme-brown);
+}
+
+.dropdown-item:hover{
+  background-color:#ebc179;
+}
+
+/** Footer  */
+.fa {
+  position: relative;
+  font-size: 2rem !important;
+  color: var(--theme-brown);
+}
+
+.fa:hover:not(#cart-icon) {
+  transform: rotate(10deg);
+  cursor: pointer;
+}
+
+#contact {
+  background-color: var(--theme-l-brown);
+  padding-bottom: 0;
+}
+
+#greet {
+  background-color: var(--theme-brown);
+  color: var(--theme-l-brown);
+  padding: 0.5rem 0;
+}
+
+/** Media queries  */
+
+@media screen and (max-width: 992px) {
+  .nav-link:hover {
+    background-color: var(--theme-l-brown);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .setUl {
+    padding-left: 40px;
+  }
+
+  .nav-link-effect::after{
+    content: "";
+    position: absolute;
+    transform: scaleX(0);
+    height: 2px;
+    width: 63%;
+    bottom: 0;
+    left: 5;
+    background-color: #6c380e;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .nav-link-effect:nth-child(3)::after {
+    width: 60%;
+  }
+  
+  .nav-link-effect:last-child::after {
+    width: 70%;
+  }
+
+  .nav-link-effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}

@@ -1,0 +1,94 @@
+:root{
+    --gradient : linear-gradient(0deg,rgba(42, 32, 32, 0.773),rgba(42, 32, 32, 0.773));
+}
+
+.card:not(#footer-content,.combo),#combo-style{
+    box-shadow: 0 0 1rem black;
+}
+
+.card:not(#footer-content){
+    background-color: var(--theme-l-brown);
+    border-color: var(--theme-brown) !important;
+}
+
+.brown-text{
+    color: var(--theme-l-brown) !important;
+}
+
+.nav-tabs .nav-link{
+    background-color: var(--theme-l-brown);
+    color: var(--theme-brown);
+    border: 1px solid var(--theme-brown);
+}
+
+.nav-tabs .nav-link:hover,.nav-tabs .active:not(.add-item) {
+    border: 1px solid var(--theme-brown);
+    background-color: var(--theme-brown) !important;
+    color: var(--theme-l-brown) !important;
+}
+
+#pizza-menu{
+    background: var(--gradient),url("/Images/menu_pizza.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#burger-menu{
+    background: var(--gradient),url("/Images/menu_burger.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#fries-menu{
+    background: var(--gradient),url("/Images/menu_fries.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#sandwich-menu{
+    background: var(--gradient),url("/Images/menu_sandwich.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#franky-menu{
+    background: var(--gradient),url("/Images/menu_franky.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#puff-menu{
+    background: var(--gradient),url("/Images/menu_puff.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#bhel-menu{
+    background: var(--gradient),url("/Images/menu_bhel.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#pasta-menu{
+    background: var(--gradient),url("/Images/menu_pasta.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#other-menu{
+    background: var(--gradient),url("/Images/menu_other.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.combo{
+    background-color: transparent !important;
+    color: var(--theme-l-brown);
+}
+
+#combo-style{
+    background: var(--gradient),url("/Images/combo-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}

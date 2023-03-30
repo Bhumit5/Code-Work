@@ -1,0 +1,79 @@
+    body {
+        box-sizing: border-box;
+        background-color: black;
+        color: white;
+    }
+    
+    * {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    #title,
+    #sub-title {
+        text-shadow: -3px -2px 2px rgb(118, 118, 118);
+    }
+    
+    #title,
+    #sub-title,
+    #skill-p,
+    #skill-p1 {
+        text-align: center;
+    }
+    
+    #img-div {
+        padding: 8px;
+    }
+    
+    #image {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 5px;
+        transition: all ease-out 0.5s;
+    }
+    
+    #image:hover {
+        box-shadow: 1px 1px 1px 1px rgb(230, 230, 230), -1px -1px 1px 1px rgb(230, 230, 230);
+        transform: scale(105%);
+    }
+    
+    #img-caption {
+        text-align: center;
+        margin: 20px;
+    }
+    
+    #tribute-info {
+        background-color: rgb(61, 59, 59);
+        border: 6px double rgb(78, 78, 78);
+        border-radius: 5px;
+    }
+    
+    #tribute-info:hover {
+        box-shadow: 1px 1px 1px 0.5px rgb(168, 168, 168), -1px -1px 1px 0.5px rgb(168, 168, 168);
+    }
+    /* My skills */
+    
+    .skills,
+    #about,
+    .contact {
+        display: block;
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .skills,
+    .contact {
+        display: block;
+        margin-top: 20px;
+        border-top: 5px double rgb(96, 96, 96);
+    }
+    
+    a {
+        color: rgb(137, 197, 247);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: rgb(0, 136, 255);
+    }

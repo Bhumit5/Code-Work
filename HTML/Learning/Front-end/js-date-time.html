@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+</head>
+<style>
+    body {
+        background-color: rgba(0, 174, 255, 0.584);
+    }
+    
+    .container {
+        background-color: rgb(164, 253, 248);
+        padding: 40px 35px;
+        border: 2px solid rgb(78, 108, 238);
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 20px rgba(147, 113, 225, 0.868);
+        font-size: 1.5rem;
+    }
+    
+    #time {
+        text-shadow: 2px 2px rgb(185, 205, 206);
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="container">
+        Current time is <span id="time"></span>
+    </div>
+
+</body>
+<script>
+    // let now = new Date();
+    // console.log(now);
+
+    // let standerd_time = new Date(0);
+    // console.log(standerd_time)
+
+    // let newdate = new Date('2025-05-19')
+    // console.log(newdate)
+
+    // Date( Year, Month, Day, Hours, Minutes, Seconds, Miliseconds )
+    // let newdate1 = new Date(2030, 5, 19, 20, 50, 45, 55)
+    // console.log(newdate1)
+
+    // let yr = newDate.getFullYear();
+    // console.log("The year is ", yr);
+
+    // let dat = newDate.getDate();
+    // console.log("The date is ", dat);
+
+    // let month = newDate.getMonth();
+    // console.log("The month is ", month);
+
+    // let hours = newDate.getHours();
+    // console.log("The hours is ", hours);
+
+    // newDate.setDate(8);
+    // newDate.setMinutes(29);
+    // console.log(newDate)
+
+    setInterval(currentTime, 1000);
+
+    function currentTime() {
+        time.innerHTML = new Date()
+    }
+</script>
+
+</html>

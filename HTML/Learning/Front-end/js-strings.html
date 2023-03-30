@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>This is hadding</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit dolor nam quibusdam magnam reprehenderit ipsam tempore, corrupti rerum quas soluta ab ea animi quisquam hic.</p>
+    </div>
+
+    <script>
+        var string = "this"; /* You can use either double or single quotes */
+        var ab = ' is';
+        console.log(string)
+        console.log(string + ab)
+        var temp = `${string} ${ab}`
+        console.log(temp)
+
+        var len = temp.length;
+        console.log(`The length is ${len}`)
+        console.log(`The \t length is\\ \n ${len}`)
+
+        var y = new String("New string is created")
+        console.log(`${y} is created using constructor`)
+
+        document.getElementById('content').innerHTML = '<h3> This is hadding3 </h3>'
+
+        var str = "This is a string"
+        var position = str.indexOf("is") /* First occurance of a substring */
+
+
+        console.log(position)
+        position = str.lastIndexOf("i")
+        console.log(position)
+
+        var sstr = str.slice(1, 5);
+        console.log(sstr)
+
+        var str = "This is a string";
+        console.log(str);
+
+        // First occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position)
+
+        // Last occurence of a substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        // var substr = str.slice(1,7);
+        // var substr = str.substring(1,7);
+        var substr1 = str.substr(1, 3);
+        console.log(substr1)
+
+        // var replaced = str.replace('string', 'Patel');
+        // console.log(str)
+        // console.log(replaced)
+
+
+        // console.log(str.toUpperCase());
+        // console.log(str.toLowerCase());
+        // var newString = str.concat('New String')
+        // console.log(newString)
+        // var strWithWhitespaces = "   this contains        whitespaces   ";
+        // console.log(strWithWhitespaces)
+        // console.log(strWithWhitespaces.trim())
+
+        // var char2 = str.charAt(2);
+        // var char2 = str.charCodeAt(2); // Not very important
+        // console.log(char2)
+
+        console.log(str[3])
+    </script>
+</body>
+
+</html>

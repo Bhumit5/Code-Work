@@ -1,0 +1,35 @@
+.active:not(button,.noactive){
+    filter: brightness(0.8);
+}
+
+.fa{
+    font-size: 30px !important;
+}
+
+.table-title{
+    margin: 1rem 0;
+    font-size: larger;
+    background-color: var(--theme-l-brown);
+}
+
+.table-title,.table-number{
+    color: var(--theme-brown);
+    text-align: center;
+}
+
+button{
+    background-color: var(--theme-l-brown) !important;
+    color: var(--theme-brown) !important;
+    border: 1px solid var(--theme-brown) !important;
+}
+
+button:hover{
+    border: 1px solid var(--theme-brown);
+    background-color: var(--theme-brown) !important;
+    color: var(--theme-l-brown) !important;
+}
+
+input{
+    accent-color: var(--theme-l-brown);
+    color: var(--theme-l-brown);
+}

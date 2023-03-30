@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/header-footer.css">
+    <link rel="stylesheet" href="/CSS/snakes.css">
+    <link rel="stylesheet" href="/CSS/beverages.css">
+    <link rel="stylesheet" href="/CSS/media.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="console.log('Hii')">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary
+            sticky-top"></nav>
+
+    <div class="container my-4">
+        <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+            <li class="nav-item me-2" role="presentation">
+                <button class="nav-link active rounded-2" id="snakes-tab" data-bs-toggle="tab" data-bs-target="#snakes"
+                    type="button" role="tab" aria-controls="snakes" aria-selected="false">Snakes</button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+                <button class="nav-link rounded-2" id="beverages-tab" data-bs-toggle="tab" data-bs-target="#beverages"
+                    type="button" role="tab" aria-controls="beverages" aria-selected="false">Beverages</button>
+            </li>
+            <li class="nav-item me-2" role="presentation">
+                <button class="nav-link rounded-2" id="combo-tab" data-bs-toggle="tab" data-bs-target="#combo"
+                    type="button" role="tab" aria-controls="combo" aria-selected="false">Combo</button>
+            </li>
+        </ul>
+    </div>
+
+    <!--& Menu of the cafe  -->
+    <section class="tab-content" id="menu">
+        <!--& Snakes Menu  -->
+        <div class="tab-pane show active fade container" aria-labelledby="snakes-tab" role="tabpanel" id="snakes">
+            <div class="card w-100 mb-3">
+                <div id="pizza-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Pizza</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Regular</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Medium</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Large</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pizza">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="card w-100 mb-3">
+                <div id="burger-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text"> Burger</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Regular</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Cheese</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Jumbo</th>
+                            </tr>
+                        </thead>
+                        <tbody id="burger">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="fries-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Fries</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Regular</th>
+                            </tr>
+                        </thead>
+                        <tbody id="fries">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="sandwich-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Sandwich</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Regular</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Cheese</th>
+                            </tr>
+                        </thead>
+                        <tbody id="sandwich">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="franky-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Frankie</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Regular</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Cheese</th>
+                            </tr>
+                        </thead>
+                        <tbody id="franky">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="puff-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Puff</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Regular</th>
+                            </tr>
+                        </thead>
+                        <tbody id="puff">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="bhel-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Bhel</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Regular</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bhel">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="pasta-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Pasta</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Regular</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Cheese</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pasta">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="other-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Other</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0 pe-2">Regular</th>
+                            </tr>
+                        </thead>
+                        <tbody id="other">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+        <!--& Beverages menu  -->
+        <div class="tab-pane fade container" role="tabpanel" aria-labelledby="beverages-tab" tabindex="0"
+            id="beverages">
+            <div class="card w-100 mb-3">
+                <div id="tea-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Tea</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="tea">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="coffee-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Coffee</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="coffee">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="juice-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Fresh
+                                    Juice</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Half</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0">Full</th>
+                            </tr>
+                        </thead>
+                        <tbody id="juice">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card w-100 mb-3">
+                <div id="drink-menu" class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr class="border-0">
+                                <th scope="col" class="brown-text">Cold Cans</th>
+                                <th scope="col" class="text-end brown-text
+                                        px-0"></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cans">
+                            <!--~ Items are adding here through js  -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <!--& Combo menu  -->
+        <div class="tab-pane fade container mb-4" role="tabpanel" aria-labelledby="combo-tab" tabindex="0" id="combo">
+            <div id="combo-style" class="card-group  rounded-2">
+                <div class="row row-cols-1 row-cols-md-3 g-4 my-3">
+                    <div class="col">
+                        <div class="card combo border-0">
+                            <img src="/Images/combo-4.png" class="card-img-top" alt="combo img">
+                            <div class="card-body">
+                                <h3 class="card-title text-center
+                                        combo-price">169/-</h3>
+                                <p class="card-text brown-text brown-text">Veg club sandwich
+                                    (Regular)</p>
+                                <p class="card-text brown-text brown-text">Cappuccino</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card combo border-0">
+                            <img src="/Images/combo-1.png" class="card-img-top" alt="combo img">
+                            <div class="card-body">
+                                <h3 class="card-title text-center
+                                        combo-price">199/-</h3>
+                                <p class="card-text brown-text">Cheesy Stuffed Veggie
+                                    Burger(regular)</p>
+                                <p class="card-text brown-text">Lemon Tea (Ice)</p>
+                                <p class="card-text brown-text">French Fries</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card combo border-0">
+                            <img src="/Images/combo-2.jpeg" class="card-img-top" alt="combo img">
+                            <div class="card-body">
+                                <h3 class="card-title text-center
+                                        combo-price">329/-</h3>
+                                <p class="card-text brown-text">Garlic Bread</p>
+                                <p class="card-text brown-text">Coca Cola Can</p>
+                                <p class="card-text brown-text">Veggie Supreme Pizza
+                                    (Regular)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card combo border-0">
+                            <img src="/Images/combo-3.png" class="card-img-top" alt="combo img">
+                            <div class="card-body">
+                                <h3 class="card-title text-center combo-price">499/-</h3>
+                                <p class="card-text brown-text">3 Special Veg Burger (Regular)</p>
+                                <p class="card-text brown-text">Monster</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card combo border-0">
+                            <img src="/Images/combo-5.png" class="card-img-top" alt="combo img">
+                            <div class="card-body">
+                                <h3 class="card-title text-center
+                                        combo-price">519/-</h3>
+                                <p class="card-text brown-text">Creamy Tomato Pasta Pizza (Regular)</p>
+                                <p class="card-text brown-text">Aloo Tikki Burger (Regular)</p>
+                                <p class="card-text brown-text">Caramel Cappuccino </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer id="contact"></footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script src="/JS/header-footer.js"></script>
+<script src="/JS/snakes.js"></script>
+<script src="/JS/beverages.js"></script>
+<script src="/JS/combo.js"></script>
+<script>
+    document.querySelector("#menu-option").classList.add("active");
+</script>
+
+</html>

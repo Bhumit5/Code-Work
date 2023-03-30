@@ -1,0 +1,295 @@
+/** Welcome slide */
+.carousel-caption {
+  color: var(--theme-brown);
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 6px var(--theme-l-brown);
+}
+
+.carousel-caption p {
+  margin: 0;
+  padding: 0;
+}
+
+#welcome-img {
+  filter: brightness(0.3);
+}
+
+#cup {
+  position: relative;
+  height: 100px;
+  margin-bottom: 5px;
+  filter: brightness(0.8);
+}
+
+/** Information Section  */
+#stars {
+  display: block;
+  height: 5rem;
+  margin: 1.1rem auto;
+}
+
+.info-text {
+  text-align: center;
+  width: 70%;
+}
+
+/** Cafe interior  */
+.hedding-bar {
+  height: 3rem;
+  background-color: var(--theme-l-brown);
+}
+
+.hedding-bar p {
+  text-align: center;
+  padding-top: 0.8em;
+}
+
+/** Menu  */
+#menu {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 222, 173, 0.67),
+      rgba(255, 222, 173, 0.67)
+    ),
+    url("/Images/DeskMenuBackground.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#menu-item div:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.item-img {
+  height: 16rem;
+  position: relative;
+}
+
+.odd-item .item-img::before {
+  content: "Creamy Tomato Pasta Pizza";
+  font-weight: bold;
+  padding-left: 4rem;
+  padding-bottom: 0.3rem;
+  position: absolute;
+  top: 20%;
+  border-bottom: 5px solid var(--theme-brown);
+  width: 53rem;
+  left: 57%;
+}
+
+.even-item .item-img::before {
+  content: "Aloo Tikki Burger";
+  font-weight: bold;
+  position: absolute;
+  text-align: end;
+  padding-right: 8rem;
+  padding-bottom: 0.3rem;
+  top: 22%;
+  border-bottom: 5px solid var(--theme-brown);
+  width: 57rem;
+  right: 44%;
+}
+
+#cappuccino::before {
+  content: "Cappuccino";
+}
+#combo::before {
+  content: "Combo";
+}
+
+#menu-item div {
+  display: flex;
+}
+
+.food-info,
+.food-price {
+  height: 107px;
+  width: 60rem;
+  flex-direction: column !important;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5.2rem;
+}
+.food-info {
+  align-items: flex-start;
+}
+
+.even-item .food-info {
+  margin-left: 5rem;
+}
+.even-item .food-price {
+  align-items: end;
+}
+
+.odd-item .food-price {
+  padding-right: 6.2rem;
+  align-items: end;
+}
+
+.food-info li,
+.food-price li {
+  list-style: none;
+}
+
+.item-line {
+  padding: 2px;
+}
+#button {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  border-bottom: 5px double var(--theme-brown);
+}
+
+.more-button,
+.service-button {
+  background-color: var(--theme-l-brown);
+  border: 2px solid var(--theme-brown);
+}
+
+.more-button:hover,
+.service-button:hover {
+  background-color: #f3c87e;
+  border: 2px solid var(--theme-brown);
+}
+
+.more-button a,
+.service-button a {
+  color: var(--theme-brown);
+  text-decoration: none;
+}
+
+/** Services section  */
+#services {
+  background: linear-gradient(
+      0deg,
+      rgba(37, 22, 0, 0.67),
+      rgba(37, 22, 0, 0.67)
+    ),
+    url("/Images/services.jpg");
+  background-size: cover;
+}
+
+.service-info {
+  /* position: relative; */
+  background: rgba(86, 71, 33, 0.73);
+  border-radius: 36px;
+  /* height: 100%; */
+}
+
+#services-card {
+  color: #fac198;
+}
+
+.card-body-color {
+  color: var(--theme-l-brown) !important;
+}
+
+/** Media Queries  */
+@media (min-width: 1400px) {
+  .odd-item .item-img::before {
+    width: 65rem;
+    left: 57%;
+  }
+
+  .even-item .item-img::before {
+    width: 68rem;
+    right: 44%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .odd-item .item-img::before {
+    width: 42rem;
+  }
+
+  .even-item .item-img::before {
+    top: 22%;
+    width: 44rem;
+  }
+
+  .even-item .food-info {
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .item-img {
+    height: 10rem;
+  }
+
+  .odd-item .item-img::before {
+    padding-left: 5rem;
+    top: 16%;
+    width: 33rem;
+  }
+
+  .even-item .item-img::before {
+    padding-right: 5rem;
+    top: 14%;
+    width: 35rem;
+  }
+
+  .food-info,
+  .food-price {
+    padding: 0 0 6.2rem 0;
+  }
+
+  .even-item .food-info {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item-img {
+    height: 7rem;
+  }
+
+  .food-info,
+  .food-price {
+    margin-top: 2rem;
+    padding: 0.7rem 0 3rem 0;
+  }
+
+  .even-item .food-info {
+    margin-left: 3rem;
+  }
+
+  .even-item .food-price {
+    padding-left: 7rem;
+  }
+
+  .odd-item .food-price {
+    padding-right: 4.2rem;
+  }
+
+  .odd-item .item-img::before {
+    padding-left: 3.5rem;
+    top: 10%;
+    border-bottom: 3px solid var(--theme-brown);
+    width: 24rem;
+  }
+
+  .even-item .item-img::before {
+    padding-right: 4rem;
+    top: 7%;
+    border-bottom: 3px solid var(--theme-brown);
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  #menu {
+    background-size: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .food-info {
+    height: 43px;
+    margin-top: 2.4rem;
+  }
+}

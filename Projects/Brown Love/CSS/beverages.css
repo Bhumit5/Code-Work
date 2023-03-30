@@ -1,0 +1,24 @@
+#tea-menu{
+    background: var(--gradient),url("/Images/menu_tea.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#coffee-menu{
+    background: var(--gradient),url("/Images/menu_coffee.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#juice-menu{
+    background: var(--gradient),url("/Images/menu_juice.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+#drink-menu{
+    background: var(--gradient),url("/Images/menu_can.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+

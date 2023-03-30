@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+    }
+    
+    header::before {
+        content: "";
+        background: url('/HTML/images/btext.jpg') no-repeat center center/cover;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    
+    .navigation {
+        font-size: 20px;
+        display: flex;
+        font-family: 'Lobster', cursive;
+    }
+    
+    li {
+        list-style: none;
+        padding: 2px 9px;
+    }
+    
+    section {
+        height: 350px;
+        padding: 3px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid gold; */
+    }
+    /* section::before {
+        content: "This is content";
+    }
+    
+    section::after {
+        content: "This is after content";
+    } */
+    
+    h2 {
+        font-size: 4rem;
+        font-family: 'Lobster', cursive;
+    }
+    
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Welcome to codding world</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, quidem? Ab similique esse distinctio totam, aut quam dicta explicabo odit exercitationem illum? Dolore deleniti similique sunt in placeat, ipsa delectus? Tempora inventore, hic rerum
+            delectus sit impedit ad cupiditate eum voluptate incidunt aliquam quasi animi ipsum commodi aliquid, unde autem?</p>
+    </section>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+body{
+    background:linear-gradient(0deg,rgba(0, 0, 0, 0.57),rgba(0, 0, 0, 0.57)), url("/Images/login-bg.jpg") center center/cover;
+}
+
+#connect{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 80%;
+}
+
+.brown-text{
+    color: var(--theme-l-brown);
+}
+
+p a{
+    text-decoration: none;
+    color: var(--theme-brown);
+}
+
+p a:hover{
+    text-decoration: none;
+    color: var(--theme-l-brown);
+    border-bottom: 2px solid var(--theme-l-brown);
+}
+
+input{
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    border-bottom: 2px solid var(--theme-l-brown);
+    background-color: transparent;
+    caret-color: var(--theme-l-brown) !important;
+    
+}
+
+input:focus {
+  outline: none;
+}

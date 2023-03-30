@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial scale=1.0" </html>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <fieldset>
+            <div id="first-part">
+                <label id="name-label">Name <input class="input-box" type="text" id="name" placeholder="Enter your Name" required></label>
+                <label id="email-label">Email <input class="input-box" type="email" id="email" placeholder="Enter your Email" required></label>
+                <label id="number-label">Age (optional) <input class="input-box" type="number" id="number" min="10" max="100" placeholder="Enter your Age"></label>
+                <label id="dropdown-label">Which option best describes your current role?  
+      <select class="input-box" id="dropdown">
+        <option disabled selected>Select current role</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+      </select>
+
+      </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <p>Do you like programming?</p>
+            <label><input type="radio" name="radio" value="yes"> Yes</label>
+            <label><input type="radio" name="radio" value="no"> No</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <div class="prefer">
+                <p>Which programming languages you know?</p>
+                <label><input type="checkbox" value="python"> Python</label>
+                <label><input type="checkbox" value="java"> Java</label>
+                <label><input type="checkbox" value="C"> C</label>
+                <label><input type="checkbox" value="C++"> C++</label>
+                <label><input type="checkbox" value="C#"> C#</label>
+                <label><input type="checkbox" value="html"> HTML</label>
+                <label><input type="checkbox" value="CSS"> CSS</label>
+                <label><input type="checkbox" value="javascript"> Javascript</label>
+            </div>
+
+            <div id="experience">
+                <label>Tell your experience in programming<textarea id="textarea" placeholder="Type here..." ></textarea></label>
+
+            </div>
+        </fieldset>
+        <button id="submit" type="submit" value="submit"> Submit </button>
+
+    </form>
+</body>

@@ -1,0 +1,25 @@
+.nav-tabs .active {
+    background-color: var(--theme-brown) !important;
+    color: var(--theme-l-brown) !important;
+}
+
+.price{
+    font-size: large;
+}
+
+#cart-icon{
+    font-size: 1rem !important;
+}
+
+#cart-tab:hover,#cart-li .active{
+    background-color: #e9bf75 !important;
+    color: var(--theme-brown) !important;
+}
+
+.bg-brown{
+    background-color: var(--theme-l-brown);
+}
+
+.card{
+    background-color: var(--theme-l-brown);
+}

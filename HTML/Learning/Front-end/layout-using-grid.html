@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-gap: 0.3rem;
+        grid-template-areas: 'navbar navbar navbar navbar' 'section section section aside' 'footer footer footer footer';
+    }
+    
+    .item {
+        background-color: aquamarine;
+        border: 2px solid;
+    }
+    
+    #navbar {
+        grid-area: navbar;
+    }
+    
+    #section {
+        grid-area: section;
+    }
+    
+    #aside {
+        grid-area: aside;
+    }
+    
+    #footer {
+        grid-area: footer;
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div id="navbar" class="item">
+            Home About Contact Help
+        </div>
+        <div id="section" class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est assumenda laboriosam, autem deleniti iusto commodi molestias repellat quae, eum quo maxime quaerat vitae distinctio? Veniam repellat corporis pariatur vitae? Fugit! Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Necessitatibus maxime quos incidunt quaerat voluptas dolorem dicta aliquid! Odit laborum dignissimos veniam non, tenetur eligendi provident hic dolore facilis rem error doloremque ullam amet quos? Pariatur
+            voluptate eaque, at quia voluptatum officia autem est amet deleniti dolorem architecto animi nobis. Ea incidunt placeat commodi hic similique minus exercitationem dolor, doloremque accusantium autem quisquam doloribus molestiae consequuntur
+            cupiditate, ipsum earum? Esse, rerum debitis delectus modi facilis velit nesciunt! Dignissimos itaque consequatur recusandae distinctio corrupti quod aliquid, quas doloribus nisi officiis accusamus odit, assumenda repudiandae nemo est voluptas
+            commodi inventore sed, eligendi quae?</div>
+
+        <div id="aside" class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. In, repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab aspernatur quae amet culpa veniam quisquam tenetur deserunt, cupiditate ipsa? Praesentium facilis architecto
+            voluptatibus voluptas dolores recusandae aut. Distinctio maxime earum corporis non error! Ratione exercitationem laborum impedit, saepe deserunt itaque amet veritatis, nulla, ea temporibus aspernatur nostrum doloremque illum. </div>
+        <!--         
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div> -->
+
+        <footer id="footer" class="item">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, quae. Eum, ipsum, quae, qui quas debitis deserunt nam doloremque vitae similique ullam aut iure suscipit. Iure vel alias exercitationem, labore voluptatum nostrum expedita deserunt
+            assumenda minus, ipsum consequuntur. Repudiandae optio, illo molestias repellendus quidem iusto ipsum quasi officia assumenda veniam.</footer>
+
+    </div>
+</body>
+
+</html>

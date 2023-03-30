@@ -1,0 +1,19 @@
+/*    # is used for id */
+
+#redpara{
+    color: red;
+}
+
+/*    # is used for id */
+
+.bluepara{
+    color: blue;
+}
+
+/* grouping selector */
+footer, span{
+    color: darkred;
+    background-color: cyan;
+    border: 2px solid blue;
+}
+
