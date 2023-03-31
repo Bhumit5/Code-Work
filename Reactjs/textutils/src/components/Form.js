@@ -4,7 +4,9 @@ export default function Form(props) {
   const upper = () => {
     // let result = text.toUpperCase();
     // setText(result);
+    
     setText(text.toUpperCase());
+    props.showAlert("Your input is converted in uppercase!","success");
   };
   
   const change = (event) => {
@@ -32,6 +34,17 @@ export default function Form(props) {
       <button className="btn btn-dark" onClick={upper}>
         Upper
       </button>
+
+      <button className="btn btn-dark mx-2" onClick={upper}>
+        Copy
+      </button>
+
+      <div className="container">
+        <h2>Preview</h2>
+        <p>{text}</p>
+        <p><b> No. of characters:</b> {text.length}</p>
+        <p><b> No. of words:</b> {text.split(' ').length}</p>
+      </div>
     </div>
   );
 }
