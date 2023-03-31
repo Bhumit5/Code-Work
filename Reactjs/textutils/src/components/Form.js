@@ -30,7 +30,7 @@ export default function Form(props) {
         ></textarea>
       </div>
       <button className="btn btn-dark" onClick={upper}>
-        Convert
+        Upper
       </button>
     </div>
   );
